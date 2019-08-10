@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<html>
+<html lang = "pt-br" >
+<title>Fórum - PRUFAL</title>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<head>
+	<style> 
+		body
+		{
+			background-color: #343a40;
+		}
+	</style>
+</head>
+
+<body class="text-center">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  	 <img class="card-img-top" src="fonte.png"style= "width: 10rem;">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="forum_1.html">Fórum</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="anonimo.html">Modo Anônimo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="registro.html">Registre-se</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blocos e estabelecimentos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobre.html">Sobre</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<main role="main" class="inner cover bg-dark mt-0 pt-5">
+ <p class="lead">
+      <a href="" class="btn btn-bg btn-primary text-light" onclick="printar()">Faça aqui sua reclamação</a>
+ </p>
+</main>
+
+<footer class="navbar navbar-expand-lg navbar-dark bg-dark" style="
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: red;
+	color: white;
+	text-align: center;">
+	<div class=" col-md-12 text-center">
+		<img class="card-img-top" src="fonte.png"style= "width: 8rem;">
+	</div>
+</footer>
+<script>
+    //função que quando o usuário clica no botão faz as solicitações necessárias 
+    function printar()
+    {
+        alert("Bem vindo ao fórum!");
+        var input1 = prompt("Escreva um breve resumo do problema:");
+        var input2 = prompt("Escreva, em detalhes, o ocorrido:");
+        var local = prompt("Informe o bloco onde ocorreu:");
+        alert("Obrigado! Iremos encaminhar o problema à direção do bloco " + local +".");
+    }    
+</script>
+</body>
+</html>
