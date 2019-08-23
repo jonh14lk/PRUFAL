@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<html>
 <title>Login</title>
 <meta charset="utf-8">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -273,12 +274,12 @@ input[type=text]:placeholder {
     <form>
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="Login">
       <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
-      <input type="submit" class="fadeIn fourth" value="Entrar">
+      <input type="submit" class="fadeIn fourth" value="Entrar" onclick="window.open('homepage_logado.html')"> <!-- Atributo responsavel por abrir outra janela ao clicar no botão -->
     </form>
 
     
     <div id="formFooter">
-      <a class="underlineHover" href="#">Esqueceu a sua senha?</a>
+      <a class="underlineHover" onclick="recuperar_senha()">Esqueceu a sua senha?</a>
     </div>
 
     <div id="formFooter">
@@ -287,3 +288,11 @@ input[type=text]:placeholder {
 
   </div>
 </div>
+<script>
+    function recuperar_senha () // função que solicita o e-mail do usuário para recuperar a senha
+    {
+        var a = prompt ("Informe o e-mail cadastrado"); // variavel que recebe o e-mail
+        alert("Acabamos de enviar o código de recuperação para o email: " +a); // exibindo na tela a mensagem de que enviou o código de recuperação
+    }
+</script>
+</html>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!-- Parte de estilização da homepage -->
 <html>
 <html lang = "pt-br" >
 <title>Fórum - PRUFAL</title>
@@ -37,9 +37,6 @@
         <a class="nav-link" href="registro.html">Registre-se</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blocos e estabelecimentos</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="sobre.html">Sobre</a>
       </li>
     </ul>
@@ -64,15 +61,14 @@
 	</div>
 </footer>
 <script>
-    //função que quando o usuário clica no botão faz as solicitações necessárias 
-    function printar()
+    function printar() //função que quando o usuário clica no botão faz as solicitações necessárias 
     {
-        alert("Bem vindo ao fórum!");
-        var input1 = prompt("Escreva um breve resumo do problema:");
-        var input2 = prompt("Escreva, em detalhes, o ocorrido:");
-        var local = prompt("Informe o bloco onde ocorreu:");
-        alert("Sua reclamação foi:" +"\n" +"\n" + input1  +"\n" +"\n" + input2);
-        alert("Obrigado! Iremos encaminhar o problema à direção do bloco " + local +".");
+        alert("Bem vindo ao fórum!"); // imprime na tela uma mensagem de boas vindas
+        var input1 = prompt("Escreva um breve resumo do problema:"); // variavel que armazena o resumo do ocorrido
+        var input2 = prompt("Escreva, em detalhes, o ocorrido:"); // variavel que armazena a descrição em detalhes
+        var local = prompt("Informe o bloco onde ocorreu:"); // variavel que armazena o bloco em que ocorreu o problema
+        alert("Sua reclamação foi:" +"\n" +"\n" + input1  +"\n" +"\n" + input2); // imprime a reclamação na tela
+        alert("Obrigado! Iremos encaminhar o problema à direção do bloco " + local +"."); // imprime a mensagem dizendo que vai encaminhar ao bloco 
     }    
 </script>
 </body>
